@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: chefai-proxy
+    runtime: python
+    buildCommand: echo ready
+    startCommand: python main.py
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
